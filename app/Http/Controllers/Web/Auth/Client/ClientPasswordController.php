@@ -1,0 +1,55 @@
+<?php
+
+namespace App\Http\Controllers\Web\Auth\Client;
+
+use App\Http\Controllers\Controller;
+use App\Models\Client;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Str;
+
+class ClientPasswordController extends Controller
+{
+    public function forget(){
+        return view('web.auth.client.password.forget');
+    }
+
+    public function checkEmail(Request $request){
+        $request->validate(['email' => 'required|email']);
+
+        $status = Password::broker('clients')->sendResetLink(
+            $request->only('email')
+        );
+
+        return $status === Password::RESET_LINK_SENT
+                    ? back()->with(['status' => __($status)])
+                    : back()->withErrors(['email' => __($status)]);
+    }
+    public function reset($token){
+        return view('web.auth.client.password.reset',compact('token'));
+    }
+
+    function update(Request $request){
+        $request->validate([
+            'token' => 'required',
+            'email'=>"required|email|string",
+            'password' => 'required|min:8|confirmed',
+        ]);
+
+        $status = Password::broker('clients')->reset(
+            $request->only('email','password','token'),
+            function (Client $client, string $password) {
+                $client->forceFill([
+                    'password' => Hash::make($password)
+                ])->setRememberToken(Str::random(length:60));
+
+                $client->save();
+            }
+        );
+
+        return $status === Password::PASSWORD_RESET
+                    ? redirect()->route('client.showLoginForm')->with('status', __($status))
+                    : back()->withErrors(['email' => [__($status)]]);
+    }
+}

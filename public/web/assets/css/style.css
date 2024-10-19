@@ -1,0 +1,2586 @@
+                        /*----------------------------public settings----------------------------*/
+body{
+    font-family: 'Cairo', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.main-color{
+    color: #ec3454;
+}
+
+.secondary-color{
+    color: #240041;
+}
+
+.subtitle h1{
+    border-right: 4px solid #000;
+    padding: 12px 15px;
+    font-weight: 600;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
+
+.form-group{
+    margin: 0;
+}
+
+.form-group select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    border: none;
+}
+
+.form-group select:focus{
+    border: none;
+    box-shadow: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+textarea{
+    border: none;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.row{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+button:focus{
+    outline: none;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!--hide input type number arrows--!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+/*header*/
+header{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav-bar .navbar{
+    background-color: #ececec;
+    padding: 10px 25px;
+    height: 10%;
+}
+
+.nav-bar .navbar .right-part{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-bar .navbar .icons{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .navbar .icons .cart{
+    font-size: 25px;
+    margin-left: 25px;
+    color: #ec3454;
+}
+
+.nav-bar .navbar .icons .user .dropdown button{
+    font-size: 25px;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.nav-bar .navbar .icons .user .dropdown button:focus{
+    box-shadow: none;
+}
+
+.nav-bar .navbar .icons .user .dropdown button::after{
+    display: none;
+}
+
+.nav-bar .navbar .icons .user .dropdown .dropdown-menu{
+    left: -80px;
+    margin: 0;
+    background-clip: none;
+    border: none;
+    border-radius: 0;
+}
+
+.nav-bar .navbar .icons .user .dropdown .dropdown-menu a{
+    display: flex;
+    align-items: center;
+    color: #240041;
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+.nav-bar .navbar .icons .user .dropdown .dropdown-menu a:active{
+    background: none;
+}
+
+.nav-bar .navbar .icons .user .dropdown .dropdown-menu a:focus{
+    outline: none;
+}
+
+.nav-bar .navbar .icons .user .dropdown .dropdown-menu a i{
+    margin-left: 10px;
+}
+
+.nav-bar .navbar .right-part .search-field form{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-bar .navbar .right-part .search-field form input{
+    height: 40px;
+    width: 260px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    padding: 0 10px 0 50px;
+}
+
+.nav-bar .navbar .right-part .search-field form button{
+    background: none;
+    border: none;
+    padding: 0;
+    left: 10px;
+    position: absolute;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.nav-bar .navbar .right-part .search-field form input,
+.nav-bar .navbar .right-part .search-field form button:focus{
+    outline: none;
+}
+
+.nav-bar .navbar .navbar-brand{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-bar .navbar .navbar-brand img{
+    width: 120px;
+}
+
+.nav-bar .navbar .navbar-toggler{
+    border: none;
+    padding: 0;
+    text-align: left;
+}
+
+.nav-bar .navbar .navbar-toggler .navbar-toggler-icon{
+    background-image: none;
+    font-size: 25px;
+    width: auto;
+    height: auto;
+}
+
+.nav-bar .navbar .navbar-toggler:focus{
+    outline: none;
+}
+
+.nav-bar .navbar .navbar-collapse{
+    text-align: left;
+}
+
+/*footer*/
+.footer{
+    background-image: url("../../imgs/footerbg.png");
+    padding: 50px 0
+}
+
+.footer .info .title{
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    margin-bottom: 30px;
+}
+
+.footer .info .title img{
+    width: 40px;
+    margin-left: 15px;
+}
+
+.footer .info .text{
+    color: #FFF;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.footer .info .social a{
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+.footer .info .social a i{
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+
+}
+
+.footer .info .social a:hover .fa-instagram{
+    color: #e4405f;
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+.footer .info .social a:hover .fa-twitter{
+    color: #55acee;
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+.footer .info .social a:hover .fa-facebook{
+    color: #3b5999;
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+.footer .logo{
+    text-align: left;
+}
+
+.footer .logo img{
+    width: 360px;
+}
+
+
+
+                        /*----------------------------home page----------------------------*/
+/*intro*/
+.intro{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+}
+
+.intro h1{
+    font-size: 160px;
+    transform: rotate(-15deg);
+    margin-bottom: 60px;
+    display: inline-block;
+}
+
+.intro p{
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+.intro a{
+    color: #FFF;
+    text-decoration: none;
+    background-image: linear-gradient(to top, #a20a4a, #dc3c50);
+    font-size: 25px;
+    padding: 15px 50px;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
+.intro a img{
+    height: 40px;
+}
+
+
+/*find-restaurants*/
+.find-restaurants{
+    background-image: url("../../imgs/restaurant-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.find-restaurants h2{
+    font-weight: 700;
+    color: #240041;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.find-restaurants{
+    width: 100%;
+}
+
+.find-restaurants .filter{
+    margin-bottom: 80px;
+}
+
+.find-restaurants .filter .city .form-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    box-shadow: 5px 0px 6px #c2c2c2;
+    position: relative;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.find-restaurants .filter .city .form-group select{
+    height: 70px;
+    z-index: 5;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0 40px;
+    font-weight: 600;
+}
+
+.find-restaurants .filter .city .form-group i{
+    position: absolute;
+    left: 40px;
+}
+
+.find-restaurants .filter .search form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.find-restaurants .filter .search input{
+    height: 70px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    background-color: #f6f6f6;
+    padding: 0 40px;
+    font-weight: 600;
+    box-shadow: 5px 0px 6px #c2c2c2;
+}
+
+.find-restaurants .filter .search input::placeholder{
+    color: #530791;
+    opacity: 0.7;
+}
+
+.find-restaurants .filter .search button{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 70px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.find-restaurants .restaurants .row{
+    margin-bottom: 30px;
+}
+
+.find-restaurants .restaurants .the-card{
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 2px 3px 3px #c2c2c2;
+}
+
+.find-restaurants .restaurants .the-card a{
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.find-restaurants .restaurants .the-card .logo{
+    height: 180px;
+
+}
+
+.find-restaurants .restaurants .the-card .info .name,
+.find-restaurants .restaurants .the-card .info .stars{
+    margin-bottom: 20px;
+}
+
+.find-restaurants .restaurants .the-card .info .text p:not(:last-of-type){
+    margin-bottom: 10px;
+}
+
+.find-restaurants .restaurants .the-card .info .stars i{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.find-restaurants .restaurants .the-card .info .stars i:last-of-type{
+    margin: 0;
+}
+
+.find-restaurants .restaurants .the-card .available{
+    display: flex;
+    align-items: center;
+}
+
+.find-restaurants .restaurants .the-card .available .green-circle{
+    width: 20px;
+    height: 20px;
+    background-color: #16bf4e;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    margin-left: 5px;
+}
+
+ .red-circle{
+    width: 20px;
+    height: 20px;
+    background-color:rgb(70, 5, 5);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    margin-left: 5px;
+}
+
+.find-restaurants .restaurants .the-card .available p{
+    font-weight: 600;
+}
+
+/*offers*/
+.offers{
+    padding: 140px 60px;
+}
+
+.offers .col-md-7{
+    display: flex;
+    align-items: center;
+}
+
+.offers .offer-info{
+    background-image: url("../../imgs/offers-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+    padding: 60px 40px;
+    border-radius: 15px;
+    font-size: 30px;
+    line-height: 2;
+    text-align: center;
+}
+
+.offers .offer-info p{
+    margin-bottom: 30px;
+}
+
+.offers .offer-info a{
+    color: #FFF;
+    text-decoration: none;
+    background-image: linear-gradient(to top, #a20a4a, #dc3c50);
+    font-size: 20px;
+    padding: 10px 50px;
+    border-radius: 30px;
+}
+
+/*sofra-app*/
+.sofra-app{
+    background-image: url("../../imgs/our-app.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 90px 60px;
+    padding-bottom: 0;
+    color: #FFF;
+}
+
+.sofra-app .info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sofra-app .info h2{
+    margin-bottom: 140px;
+}
+
+.sofra-app .info a{
+    background-image: url("../../imgs/btn-card.png");
+    color: #FFF;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
+
+.sofra-app .info a i{
+    margin-right: 10px;
+}
+
+
+
+                        /*----------------------------add new offer , add new product page----------------------------*/
+.add-new-offer-page .page-content,
+.add-new-product-page .page-content,
+.cart-page .page-content,
+.contact-us-page .page-content,
+.meal-page .page-content,
+.my-account-page .page-content,
+.offers-page .page-content,
+.register-client-page .page-content,
+.register-seller-page .page-content,
+.login-page .page-content{
+    padding: 80px 0;
+}
+
+.add-new-offer-page .page-content h1,
+.add-new-product-page .page-content h1{
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.add-new-offer-page .page-content .offer-form,
+.add-new-product-page .page-content .product-form{
+    background-color: #ececec;
+    border-radius: 40px;
+    padding: 80px 100px;
+    box-shadow: 2px 2px 10px #c6c6c6;
+
+}
+
+.add-new-offer-page .page-content .offer-form form .form-group,
+.add-new-product-page .page-content .product-form form .form-group{
+    margin-bottom: 40px;
+}
+
+.add-new-offer-page .page-content .offer-form form .form-group .form-control,
+.add-new-product-page .page-content .product-form form .form-group .form-control{
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 20px;
+    padding: 35px;
+    font-size: 20px;
+}
+
+.add-new-offer-page .page-content .offer-form form .form-group textarea,
+.add-new-product-page .page-content .product-form form .form-group textarea{
+    width: 100%;
+    height: 300px;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    padding: 35px;
+    font-size: 20px;
+
+}
+
+.add-new-offer-page .page-content .offer-form form .form-group input::placeholder,
+.add-new-offer-page .page-content .offer-form form .form-group textarea::placeholder,
+.add-new-product-page .page-content .product-form form .form-group input::placeholder,
+.add-new-product-page .page-content .product-form form .form-group textarea::placeholder{
+    color: #2c024e;
+    opacity: 0.5;
+}
+
+.add-new-offer-page .page-content .offer-form form .choose-file .photo,
+.add-new-product-page .page-content .product-form form .choose-file .photo{
+    display: inline-block;
+    position: relative;
+}
+
+.add-new-offer-page .page-content .offer-form form .choose-file .photo input,
+.add-new-product-page .page-content .product-form form .choose-file .photo input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.add-new-offer-page .page-content .offer-form form .choose-file .photo img,
+.add-new-product-page .page-content .product-form form .choose-file .photo img{
+    width: 250px;
+    box-shadow: 2px 2px 6px #c6c6c6;
+}
+
+.add-new-offer-page .page-content .offer-form form .choose-file h3,
+.add-new-product-page .page-content .product-form form .choose-file h3{
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.add-new-offer-page .page-content .offer-form form .date .row{
+    padding: 0 200px;
+}
+
+.add-new-offer-page .page-content .offer-form form .date .row .from,
+.add-new-offer-page .page-content .offer-form form .date .row .to{
+    background-color: #e5e5e5;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.add-new-offer-page .page-content .offer-form form .date .row .from i,
+.add-new-offer-page .page-content .offer-form form .date .row .to i{
+    position: absolute;
+    left: 25px;
+    font-size: 25px;
+}
+
+.add-new-offer-page .page-content .offer-form form .date .row .from input,
+.add-new-offer-page .page-content .offer-form form .date .row .to input{
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 25px;
+    z-index: 5;
+}
+
+.add-new-offer-page .page-content .offer-form form .date .row .from input::placeholder,
+.add-new-offer-page .page-content .offer-form form .date .row .to input::placeholder{
+    opacity: 1;
+    font-weight: 600;
+}
+
+
+.add-new-offer-page .page-content .offer-form form .btn,
+.add-new-product-page .page-content .product-form form .btn{
+    background-image: linear-gradient(to top, #a20a4a, #dc3c50);
+    font-size: 25px;
+    padding: 20px 150px;
+    color: #FFF;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.add-new-offer-page .page-content .offer-form form .btn,
+.add-new-product-page .page-content .product-form form .btn:focus{
+    box-shadow: none;
+}
+
+
+
+                        /*----------------------------cart page----------------------------*/
+.cart-page .page-content{
+    background-image: url("../../imgs/cart-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 800px;
+}
+
+.cart-page .page-content .items .item-card{
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 2px 6px 6px #DDD;
+    padding: 35px 20px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.cart-page .page-content .items .item-card:last-of-type{
+    margin-bottom: 0;
+}
+
+.cart-page .page-content .items .item-card .item-info{
+    margin-bottom: 50px;
+}
+
+.cart-page .page-content .items .item-card .item-info .photo{
+    padding: 0;
+}
+
+.cart-page .page-content .items .item-card .item-info .photo img{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.cart-page .page-content .items .item-card .item-info .text{
+    font-size: 25px;
+    line-height: 2;
+    font-weight: 700;
+}
+
+.cart-page .page-content .items .item-card .item-info .text p{
+    color: #480b78;
+}
+
+.cart-page .page-content .items .item-card .item-info .text .amount{
+    display: flex;
+    align-items: center;
+}
+
+.cart-page .page-content .items .item-card .item-info .text .counter{
+    height: 35px;
+    width: 55px;
+    background-color: #ececec;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.cart-page .page-content .items .item-card .item-info .text .counter select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    background: none;
+    padding: 0;
+    padding-right: 10px;
+    font-size: 18px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.cart-page .page-content .items .item-card .item-info .text .counter i{
+    position: absolute;
+    left: 10px;
+}
+
+.cart-page .page-content .items .item-card button{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #ff4057;
+    color: #FFF;
+    font-size: 22px;
+    border-radius: 100px;
+    padding: 12px 60px;
+    cursor: pointer;
+}
+
+.cart-page .page-content .items .item-card button i{
+    margin-left: 5px;
+    border: 2px solid #FFF;
+    border-radius: 100%;
+    padding: 3px 6px;
+}
+
+
+
+                        /*----------------------------contact us, my account page----------------------------*/
+.contact-us-page .page-content .contact-form,
+.my-account-page .page-content .account-form{
+    text-align: center;
+    background-image: linear-gradient(to top, #a20a4a, #dc3c50);
+    color: #FFF;
+    padding: 80px 70px;
+    border-radius: 30px;
+}
+
+.my-account-page .page-content .account-form .image{
+    margin-bottom: 100px;
+}
+
+.contact-us-page .page-content .contact-form h2{
+    margin-bottom: 100px;
+}
+
+.contact-us-page .page-content .contact-form form .form-group input,
+.my-account-page .page-content .account-form form .form-group input{
+    border: none;
+    font-size: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.contact-us-page .page-content .contact-form form .form-group textarea,
+.my-account-page .page-content .account-form form .form-group textarea{
+    border: none;
+    font-size: 20px;
+    padding: 30px 40px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    width: 100%;
+    height: 300px;
+}
+
+.contact-us-page .page-content .contact-form form .form-group input::placeholder,
+.contact-us-page .page-content .contact-form form .form-group textarea::placeholder,
+.my-account-page .page-content .account-form form .form-group input::placeholder,
+.my-account-page .page-content .account-form form .form-group textarea::placeholder,
+.my-account-page .page-content .account-form form .form-group input,
+.my-account-page .page-content .account-form form .form-group textarea{
+    color: #bab9b9;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.issue-type{
+    margin-bottom: 80px;
+}
+
+ .issue-type .form-check{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.issue-type .form-check label{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.contact-us-page .page-content .contact-form form .submit,
+.my-account-page .page-content .account-form form .submit{
+    background-color: #240040;
+    color: #FFF;
+    border: none;
+    border-radius: 100px;
+    font-size: 25px;
+    padding: 20px 70px;
+    cursor: pointer;
+}
+
+
+
+                        /*----------------------------meal page----------------------------*/
+.meal-page .page-content{
+    padding-bottom: 0;
+}
+
+.meal-page .page-content .meal-info{
+    background-image: url(../../imgs/meal-bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.meal-page .page-content .meal-info .photo{
+    max-height: 700px;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 10px #DDD;
+}
+
+.meal-page .page-content .meal-info .name{
+    margin-bottom: 40px;
+}
+
+.meal-page .page-content .meal-info .name h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.meal-page .page-content .meal-info .name p{
+    font-size: 35px;
+}
+
+.meal-page .page-content .meal-info .extra-info{
+    border-bottom: 1px solid #000;
+}
+
+.meal-page .page-content .meal-info .extra-info ul{
+    padding: 0;
+    margin: 30px;
+    list-style: none;
+    line-height: 2.5;
+}
+
+.meal-page .page-content .meal-info .extra-info ul li{
+    display: flex;
+    align-items: center;
+}
+
+.meal-page .page-content .meal-info .extra-info ul li i{
+    width: 55px;
+}
+
+.meal-page .page-content .meal-info .extra-info ul li p{
+    margin-right: 20px;
+    font-size: 40px;
+}
+
+ .order-button{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.order-button a{
+    color: #FFF;
+    text-decoration: none;
+    background-image: linear-gradient(to top, #a20a4a, #dc3c50);
+    border-radius: 30px;
+    font-size: 30px;
+    padding: 15px 110px;
+    position: relative;
+}
+
+ .order-button a i{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    font-size: 75px;
+    transform: rotate(-20deg);
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.meal-page .page-content .shop-info{
+    margin-bottom: 50px;
+}
+
+.meal-page .page-content .shop-info a{
+    color: #ff4057;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.meal-page .page-content .shop-info a i{
+    margin-left: 10px;
+    color: #000;
+    border: 4px solid #000;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    padding: 10px 21px;
+    font-size: 35px;
+}
+
+.meal-page .page-content .users-ratings .ratings-counter{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 10px;
+    color: #939393;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.meal-page .page-content .users-ratings .ratings-counter p{
+    margin-left: 10px;
+}
+
+.meal-page .page-content .users-ratings .ratings{
+    margin: 30px 0;
+}
+
+.meal-page .page-content .users-ratings .ratings .rating-card{
+    background-color: #e5e5e5;
+    padding: 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.meal-page .page-content .users-ratings .ratings .rating-card:last-of-type{
+    margin-bottom: 0;
+}
+
+.meal-page .page-content .users-ratings .ratings .rating-card .row{
+    display: flex;
+    align-items: center;
+}
+
+.meal-page .page-content .users-ratings .ratings .rating-card .row .customer-rating{
+    background-color: #FFF;
+    display: inline-block;
+    font-size: 35px;
+    padding: 15px 40px;
+    border-radius: 38px;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    -ms-border-radius: 38px;
+    -o-border-radius: 38px;
+}
+
+.meal-page .page-content .users-ratings .ratings .rating-card .customer-opinion{
+    text-align: center;
+    font-size: 28px;
+    margin: 50px 0 30px;
+}
+
+.meal-page .page-content .users-ratings .add-rating .star-rating{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.meal-page .page-content .users-ratings .add-rating .star-rating .my-rating{
+    background-color: #ececec;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 36px;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 36px;
+    -ms-border-radius: 36px;
+    -o-border-radius: 36px;
+}
+
+.meal-page .page-content .users-ratings .add-rating .add-text{
+    margin-top: 20px;
+}
+
+.meal-page .page-content .users-ratings .add-rating .add-text textarea{
+    width: 100%;
+    height: 350px;
+    background-color: #f9f9f9;
+    padding: 40px;
+    font-size: 20px;
+    box-shadow: 1px 4px 8px #DDD;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
+.meal-page .page-content .users-ratings .add-rating .add-text textarea::placeholder{
+    color: #bab9b9;
+    font-size: 30px;
+}
+
+.meal-page .page-content .users-ratings .add-rating .send-btn{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.meal-page .page-content .users-ratings .add-rating .send-btn button{
+    background-image: linear-gradient(to top, #a20a4a, #dc3c50);
+    color: #FFF;
+    padding: 10px 120px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.meal-page .page-content .other-meals{
+    margin-top: 100px;
+}
+
+.meal-page .page-content .other-meals .meals{
+    background-image: url("../../imgs/meals.jpg");
+    padding: 80px 20px;
+    margin-top: 20px;
+}
+
+.meal-page .page-content .other-meals .meals .owl-carousel .meal{
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meal-page .page-content .other-meals .meals .owl-carousel .meal img{
+    max-width: none;
+    width: auto;
+    height: inherit;
+}
+
+.meal-page .page-content .other-meals .meals .owl-carousel .meal a{
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFF;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+.meal-page .page-content .other-meals .meals .owl-carousel .meal a h5{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.meal-page .page-content .other-meals .meals .owl-carousel .meal:hover a{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
+
+.meal-page .page-content .other-meals .meals .owl-carousel .owl-dots{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.meal-page .page-content .other-meals .meals .owl-dots .owl-dot{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 0 10px;
+    background-color: #240041;
+}
+
+.meal-page .page-content .other-meals .meals .owl-dots .active{
+    background-color: #dc3c50;
+}
+
+
+
+                        /*----------------------------orders page restaurant----------------------------*/
+.orders-page-restaurant .page-content{
+    padding-bottom: 80px;
+}
+
+.orders-page-restaurant .page-content .navigation .nav-pills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ec3454;
+    margin-bottom: 60px !important;
+}
+
+.orders-page-restaurant .page-content .navigation .nav-pills .nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orders-page-restaurant .page-content .navigation .nav-pills .nav-item .nav-link{
+    color: #FFF;
+    font-size: 45px;
+    font-weight: 600;
+    padding: 40px 50px;
+    border-radius: 0;
+    width: fit-content;
+}
+
+.orders-page-restaurant .page-content .navigation .nav-pills .nav-item .nav-link.active{
+    border-bottom: 5px solid #000;
+    background: none;
+}
+
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card{
+    background-color: #ececec;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card:last-of-type,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card:last-of-type,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card:last-of-type{
+    margin: 0;
+}
+
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .info,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .info .image,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .image,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .image{
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    margin-left: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .info .details h3,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .details h3,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .details h3{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .info .details ul,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .details ul,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .details ul{
+    margin: 0;
+    list-style: none;
+    line-height: 2;
+    font-size: 25px;
+    padding: 0;
+    color: #a82059;
+}
+
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .options button{
+    width: 20%;
+    margin: auto;
+    border: none;
+    border-radius: 100px;
+    padding: 15px 0;
+    font-size: 25px;
+    color: #FFF;
+    box-shadow: 0px 3px 10px #bababa;
+    cursor: pointer;
+}
+
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .options .call,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card .options .call{
+    background-color: #ec3454;
+}
+
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .options .receive,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card .options .confirm,
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .options .completed{
+    background-color: #008d3d;
+}
+
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .options .refuse{
+    background-color: #240041;
+}
+
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card .options button{
+    width: 35%;
+    margin: auto;
+    border: none;
+    border-radius: 100px;
+    padding: 15px 0;
+    font-size: 25px;
+    color: #FFF;
+    box-shadow: 0px 3px 10px #bababa;
+    cursor: pointer;
+}
+
+.orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .options button{
+    width: 30%;
+    margin: auto;
+    border: none;
+    border-radius: 100px;
+    padding: 15px 0;
+    font-size: 25px;
+    color: #FFF;
+    box-shadow: 0px 3px 10px #bababa;
+    cursor: pointer;
+}
+
+
+
+                        /*----------------------------orders page client----------------------------*/
+.orders-page-client .page-content{
+    padding-bottom: 80px;
+}
+
+.orders-page-client .page-content .navigation .nav-pills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ec3454;
+    margin-bottom: 60px !important;
+}
+
+.orders-page-client .page-content .navigation .nav-pills .nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orders-page-client .page-content .navigation .nav-pills .nav-item .nav-link{
+    color: #FFF;
+    font-size: 45px;
+    font-weight: 600;
+    padding: 40px 50px;
+    border-radius: 0;
+    width: fit-content;
+}
+
+.orders-page-client .page-content .navigation .nav-pills .nav-item .nav-link.active{
+    border-bottom: 5px solid #000;
+    background: none;
+}
+
+.orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card,
+.orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card{
+    background-color: #ececec;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card:last-of-type,
+.orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card:last-of-type{
+    margin: 0;
+}
+
+.orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info,
+.orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info{
+    display: flex;
+    align-items: center;
+}
+
+.orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .image,
+.orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .image{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin-left: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ec3454;
+}
+
+.orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .details,
+.orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .details{
+    margin-left: auto;
+}
+
+.orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .details h2,
+.orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .details h2{
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .details ul,
+.orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .details ul{
+    margin: 0;
+    list-style: none;
+    line-height: 2;
+    font-size: 25px;
+    padding: 0;
+    color: #848484;
+}
+
+.orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .options .receive{
+    background-color: #008d3d;
+}
+
+.orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .options .refuse{
+    background-color: #ec3454;
+}
+
+
+.orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .options button{
+    width: 100%;
+    border: none;
+    border-radius: 100px;
+    padding: 15px 70px;
+    margin: 20px 0;
+    font-size: 25px;
+    color: #FFF;
+    box-shadow: 0px 3px 10px #bababa;
+    cursor: pointer;
+    display: block;
+}
+
+
+
+                        /*----------------------------offers page----------------------------*/
+.offers-page .page-content .add-btn{
+    text-align: center;
+    margin: 80px 0;
+}
+
+.offers-page .page-content .add-btn a{
+    background-image: linear-gradient(to top, #a20a4a, #dc3c50);
+    color: #FFF;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px 100px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.offers-page .page-content .offers-list .row{
+    margin-bottom: 30px;
+}
+
+.offers-page .page-content .offers-list .row:last-of-type{
+    margin-bottom: 0;
+}
+
+.offers-page .page-content .offers-list .offer-card{
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.offers-page .page-content .offers-list .offer-card a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+
+
+                /*----------------------------register client , register seller , login page----------------------------*/
+.register-client-page .page-content,
+.register-seller-page .page-content,
+.login-page .page-content{
+    background-image: url("../../imgs/Group\ 1040.png");
+    background-size: 950px;
+    background-repeat: no-repeat;
+    background-position: 560px 20px;
+}
+
+.register-client-page .page-content .register-form form,
+.register-seller-page .page-content .register-form form,
+.login-page .page-content .login-form form{
+    text-align: center;
+}
+
+.register-client-page .page-content .register-form form .select-image,
+.register-seller-page .page-content .register-form form .select-image,
+.login-page .page-content .login-form form .avatar{
+    position: relative;
+    display: inline-block;
+    box-shadow: 0px 4px 10px #DDD;
+    border-radius: 100%;
+    margin-bottom: -110px;
+}
+
+.register-client-page .page-content .register-form form .select-image input,
+.register-seller-page .page-content .register-form form .select-image input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.register-client-page .page-content .register-form form .select-image .overlay,
+.register-seller-page .page-content .register-form form .select-image .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    color: #FFF;
+    background-color: rgb(48,48,48,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.register-client-page .page-content .register-form form .select-image .overlay .text i,
+.register-seller-page .page-content .register-form form .select-image .overlay .text i{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.register-client-page .page-content .register-form form .select-image .overlay .text p,
+.register-seller-page .page-content .register-form form .select-image .overlay .text p{
+    font-size: 30px;
+}
+
+.register-client-page .page-content .register-form form .select-image:hover .overlay,
+.register-seller-page .page-content .register-form form .select-image:hover .overlay{
+    opacity: 1;
+}
+
+
+.register-client-page .page-content .register-form form .fields,
+.register-seller-page .page-content .register-form form .fields,
+.login-page .page-content .login-form form .fields{
+    background-color: #FFF;
+    box-shadow: 2px 12px 10px #DDD;
+    border-radius: 30px;
+    padding: 200px 80px;
+}
+
+.register-client-page .page-content .register-form form .fields .form-group input,
+.register-seller-page .page-content .register-form form .fields .form-group input,
+.login-page .page-content .login-form form .fields .form-group input{
+    background-color: #f3f3f3;
+    border: none;
+    font-size: 20px;
+    padding: 38px 30px;
+    margin: 40px 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.register-client-page .page-content .register-form form .fields .form-group input::placeholder,
+.register-seller-page .page-content .register-form form .fields .form-group input::placeholder,
+.login-page .page-content .login-form form .fields .form-group input::placeholder{
+    color: #240041;
+    opacity: 0.5;
+}
+
+.register-client-page .page-content .register-form form .fields .notice,
+.register-seller-page .page-content .register-form form .fields .notice{
+    text-align: right;
+}
+
+.register-client-page .page-content .register-form form .fields .notice small,
+.register-seller-page .page-content .register-form form .fields .notice small{
+    font-size: 16px;
+    font-weight: 700;
+    color: #4b2e63;
+}
+
+.register-client-page .page-content .register-form form .fields .notice small a,
+.register-seller-page .page-content .register-form form .fields .notice small a{
+    color: #a30f4d;
+}
+
+.register-client-page .page-content .register-form form .fields .btn,
+.register-seller-page .page-content .register-form form .fields .btn,
+.login-page .page-content .login-form form .fields .signin-btn{
+    background-image: linear-gradient(to top, #a20a4a, #dc3c50);
+    color: #FFF;
+    font-size: 20px;
+    padding: 20px 120px;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.register-client-page .page-content .register-form form .fields .btn:focus,
+.register-seller-page .page-content .register-form form .fields .btn:focus,
+.login-page .page-content .login-form form .fields .btn:focus{
+    box-shadow: none;
+}
+
+.select-field{
+    background-color: #f3f3f3;
+    border: none;
+    padding: 19px 30px;
+    margin: 40px 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.select-field select{
+    background: none;
+    padding: 0;
+    font-size: 20px;
+    z-index: 5;
+}
+.select-field i{
+    position: absolute;
+    left: 30px;
+    font-size: 28px;
+}
+
+.page-content .register-form form .fields .shop-photo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.register-seller-page .page-content .register-form form .fields .shop-photo p{
+    font-size: 22px;
+    margin-left: 20px ;
+}
+
+.register-seller-page .page-content .register-form form .fields .shop-photo .photo{
+    position: relative;
+    box-shadow: 0px 3px 6px #DDD;
+}
+
+.register-seller-page .page-content .register-form form .fields .shop-photo .photo input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.register-seller-page .page-content .register-form form .fields .shop-photo .photo img{
+    width: 180px;
+}
+
+.login-page .page-content .login-form form .fields .options{
+    font-weight: 600;
+    margin: 40px 0;
+}
+
+.login-page .page-content .login-form form .fields .options a{
+    color: #ec3454;
+}
+
+.login-page .page-content .login-form form .fields .options .new-user{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.login-page .page-content .login-form form .fields .options .forgot{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-page .page-content .login-form form .fields .creat-new{
+    display: inline-flex;
+}
+
+.login-page .page-content .login-form form .fields .creat-new a{
+    background-image: linear-gradient(to top, #a20a4a, #dc3c50);
+    color: #FFF;
+    font-size: 20px;
+    padding: 20px 70px;
+    border: none;
+    text-decoration: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+
+
+                /*----------------------------restaurant seller , restaurant client page----------------------------*/
+.restaurant-seller-page .page-content .restaurant-banner,
+.restaurant-client-page .page-content .restaurant-banner{
+
+    padding: 150px 0;
+}
+
+.restaurant-seller-page .page-content .restaurant-banner .image,
+.restaurant-client-page .page-content .restaurant-banner .image{
+    display: inline-block;
+    border-radius: 100%;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 100px;
+}
+
+.restaurant-seller-page .page-content .restaurant-banner .image img,
+.restaurant-client-page .page-content .restaurant-banner .image img{
+    height: 100%;
+}
+
+.restaurant-seller-page .page-content .restaurant-banner .rate .stars,
+.restaurant-client-page .page-content .restaurant-banner .rate .stars{
+    background-color: #FFF;
+    display: inline-block;
+    font-size: 35px;
+    padding: 15px 40px;
+    border-radius: 38px;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    -ms-border-radius: 38px;
+    -o-border-radius: 38px;
+}
+
+.restaurant-seller-page .page-content .meals-list,
+.restaurant-client-page .page-content .meals-list{
+    padding: 80px 0;
+    background-image: url("../../imgs/restaurant-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ .meals-list h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom:40px;
+}
+
+.add-product{
+    display: inline-flex;
+    margin-top:30px;
+    margin: 80px 0;
+}
+
+.add-product a{
+    background-image: linear-gradient(to top, #a20a4a, #dc3c50);
+    color: #FFF;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px 100px;
+    border: none;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.restaurant-seller-page .page-content .meals-list .meals .row,
+.restaurant-client-page .page-content .meals-list .meals .row{
+    margin: 30px 0;
+}
+
+.restaurant-seller-page .page-content .meals-list .meals .card,
+.restaurant-client-page .page-content .meals-list .meals .card{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: none;
+    position: relative;
+}
+
+.restaurant-seller-page .page-content .meals-list .meals .card a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    z-index: 4;
+}
+
+.restaurant-seller-page .page-content .meals-list .meals .card .image,
+.restaurant-client-page .page-content .meals-list .meals .card .image{
+    height: 260px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    position: relative;
+}
+
+.restaurant-client-page .page-content .meals-list .meals .card .image a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.image button{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    padding: 0;
+    display: inline-flex;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.offer-card button{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    padding: 0;
+    display: inline-flex;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.restaurant-seller-page .page-content .meals-list .meals .card .card-body,
+.restaurant-client-page .page-content .meals-list .meals .card .card-body{
+    padding: 30px 20px;
+}
+
+.restaurant-seller-page .page-content .meals-list .meals .card .card-body .card-title,
+.restaurant-client-page .page-content .meals-list .meals .card .card-body .card-title{
+    font-weight: 700;
+}
+
+.restaurant-seller-page .page-content .meals-list .meals .card .card-body .card-text,
+.restaurant-client-page .page-content .meals-list .meals .card .card-body .card-text{
+    color: #787878;
+}
+
+.restaurant-seller-page .page-content .meals-list .meals .card .card-body .price,
+.restaurant-client-page .page-content .meals-list .meals .card .card-body .time,
+.restaurant-client-page .page-content .meals-list .meals .card .card-body .price{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.restaurant-client-page .page-content .meals-list .meals .card .card-body .time,
+.restaurant-client-page .page-content .meals-list .meals .card .card-body .price{
+    margin-top: 15px;
+}
+
+.restaurant-seller-page .page-content .meals-list .meals .card .card-body .price img,
+.restaurant-client-page .page-content .meals-list .meals .card .card-body .time img,
+.restaurant-client-page .page-content .meals-list .meals .card .card-body .price img{
+    color: #5d5d5d;
+    width: 40px;
+    margin-left: 10px;
+}
+
+.restaurant-client-page .page-content .meals-list .meals .card .card-body .details{
+    display: inline-flex;
+    margin-top: 30px;
+}
+
+.restaurant-client-page .page-content .meals-list .meals .card .card-body .details a{
+    background-image: url("../../imgs/btn-card.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-size: 22px;
+    padding: 15px 50px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+
+
+                        /*----------------------------media----------------------------*/
+
+@media screen and(max-width: 1024px){
+    /*------home page------*/
+    .find-restaurants .restaurants .the-card .logo {
+        height: 140px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    /*------home page------*/
+    .nav-bar .navbar .icons .cart {
+        margin-left: 15px;
+    }
+
+    .nav-bar .navbar .right-part .search-field form input{
+        width: 130px;
+    }
+
+    .intro h1 {
+        font-size: 100px;
+    }
+
+    .intro p {
+        font-size: 25px;
+    }
+
+    .intro a {
+        font-size: 20px;
+    }
+
+    .find-restaurants .restaurants .the-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .find-restaurants .restaurants .the-card >*:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+    .find-restaurants .restaurants .the-card .info{
+        text-align: center;
+    }
+
+    .offers .offer-info{
+        font-size: 16px;
+    }
+
+    .offers .offer-info a{
+        font-size: 16px;
+    }
+
+    .sofra-app .info h2 {
+        margin-bottom: 50px;
+    }
+
+    .sofra-app .info a {
+        font-size: 16px;
+        padding: 20px 50px;
+    }
+
+    .footer .logo img {
+        width: 250px;
+    }
+
+    .footer .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /*------new offer page------*/
+    .add-new-offer-page .page-content .offer-form form .date .row{
+        padding: 0 50px;
+    }
+
+    .add-new-offer-page .page-content .offer-form form .btn,
+    .add-new-product-page .page-content .product-form form .btn{
+        padding: 20px 0;
+    }
+
+
+    /*------contact page------*/
+    .contact-us-page .page-content .contact-form form .submit,
+    .my-account-page .page-content .account-form form .submit{
+        padding: 20px 30px;
+    }
+
+
+    /*------orders page------*/
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info,
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .details,
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .details {
+        margin-left: 0;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .details h2,
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .details h2 {
+        font-weight: 600;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .details ul,
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .details ul {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .options button{
+        font-size: 20px;
+    }
+
+
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .info,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .info .image,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .image,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .image{
+        margin: 0 0 30px 0;
+        width: 230px;
+        height: 230px;
+    }
+
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .info .details,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .details,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .details{
+        text-align: center;
+    }
+
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .options,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card .options,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .options{
+        flex-direction: column;
+        width: 250px;
+    }
+
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .options button{
+        width: auto;
+        margin: 0 0 20px 0;
+    }
+
+    .restaurant-seller-page .page-content .meals-list .meals .card .image img,
+    .restaurant-client-page .page-content .meals-list .meals .card .image img{
+        height: inherit;
+    }
+
+    .restaurant-seller-page .page-content .meals-list .meals .card .card-body .price img,
+    .restaurant-client-page .page-content .meals-list .meals .card .card-body .time img,
+    .restaurant-client-page .page-content .meals-list .meals .card .card-body .price img{
+        width: 30px;
+    }
+
+    .restaurant-seller-page .page-content .meals-list .meals .card .card-body .price,
+    .restaurant-client-page .page-content .meals-list .meals .card .card-body .time,
+    .restaurant-client-page .page-content .meals-list .meals .card .card-body .price{
+        font-size: 16px;
+    }
+
+    .restaurant-client-page .page-content .meals-list .meals .card .card-body .details a{
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+}
+
+
+
+@media (max-width: 500px){
+    /*------public------*/
+    .nav-bar .navbar .right-part{
+        margin-bottom: 30px;
+    }
+
+    .nav-bar .navbar .navbar-brand{
+        text-align: right;
+    }
+
+    .footer{
+        text-align: center;
+    }
+    .footer .info .title {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .footer .info{
+        margin-bottom: 80px;
+    }
+
+    .footer .info .social a:last-of-type{
+        margin-left: 0;
+    }
+
+    .footer .logo {
+        text-align: center;
+    }
+
+
+    /*------home page------*/
+    .find-restaurants .filter .city .form-group{
+        margin-bottom: 20px;
+    }
+
+    .find-restaurants .restaurants .the-card{
+        text-align: center;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .find-restaurants .restaurants .the-card .logo{
+        margin-bottom: 20px;
+    }
+
+    .find-restaurants .restaurants .the-card .available{
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .find-restaurants .restaurants .row {
+        margin-bottom: 0;
+    }
+
+    .offers{
+        padding: 140px 0;
+    }
+
+    .offers .col-md-5{
+        margin-bottom: 30px;
+    }
+
+    .offers .offer-info{
+        padding: 60px 20px;
+    }
+
+    .sofra-app{
+        padding: 90px 0;
+        padding-bottom: 0;
+    }
+
+    .sofra-app .info h1 {
+        margin-bottom: 100px;
+    }
+
+    .sofra-app .info {
+        margin-bottom: 60px;
+    }
+
+
+    /*------add new offer page------*/
+    .add-new-offer-page .page-content .offer-form,
+    .add-new-product-page .page-content .product-form {
+        padding: 80px 30px;
+    }
+
+    .add-new-offer-page .page-content .offer-form form .date .row {
+        padding: 0;
+    }
+
+    .add-new-offer-page .page-content .offer-form form .btn,
+    .add-new-product-page .page-content .product-form form .btn{
+        width: 100%;
+    }
+
+
+    /*------cart page------*/
+    .cart-page .page-content .items .item-card{
+        width: 100%;
+    }
+
+    .cart-page .page-content .items .item-card .item-info .text {
+        line-height: 1.5;
+    }
+
+
+    /*------contact us page------*/
+    .contact-us-page .page-content .contact-form,
+    .my-account-page .page-content .account-form {
+        padding: 80px 30px;
+    }
+
+    .issue-type .form-check label {
+        font-size: 20px;
+    }
+
+    .contact-us-page .page-content .contact-form form .submit,
+    .my-account-page .page-content .account-form form .submit {
+        width: 100%;
+    }
+
+
+    /*------login page------*/
+    .register-client-page .page-content .register-form form .fields,
+    .register-seller-page .page-content .register-form form .fields,
+    .login-page .page-content .login-form form .fields {
+        padding: 200px 30px 100px 30px;
+    }
+
+    .register-client-page .page-content .register-form form .fields .btn,
+    .register-seller-page .page-content .register-form form .fields .btn,
+    .login-page .page-content .login-form form .fields .signin-btn{
+        width: 100%;
+    }
+
+    .login-page .page-content .login-form form .fields .options .forgot {
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    .login-page .page-content .login-form form .fields .creat-new a{
+        width: 100%;
+    }
+
+
+    /*------meal page------*/
+    .meal-page .page-content .users-ratings .ratings .rating-card .name{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .meal-page .page-content .users-ratings .ratings .rating-card .col-md-8{
+        text-align: center;
+    }
+
+
+    /*------offers page------*/
+
+     .offer-card{
+        margin-bottom: 30px;
+    }
+
+    .offers-list .row {
+        margin-bottom: 0;
+    }
+
+
+    /*------orders page client page------*/
+    .orders-page-client .page-content .navigation .nav-pills .nav-item .nav-link {
+        font-size: 30px;
+        padding: 40px 20px;
+    }
+
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .image,
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .image{
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info,
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info{
+        justify-content: center;
+    }
+
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .details,
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .details {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .options{
+        width: 100%;
+    }
+
+
+    /*------orders page restaurant page------*/
+    .orders-page-restaurant .page-content .navigation .nav-pills .nav-item .nav-link {
+        font-size: 24px;
+        padding: 40px 0px;
+    }
+
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card{
+        text-align: center;
+    }
+
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .info,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info {
+        justify-content: center;
+    }
+
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .info .image,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card .info .image,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .info .image {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .new-orders .new-card .options button,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .current-orders .current-card .options button,
+    .orders-page-restaurant .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card .options button{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .restaurant-seller-page .page-content .meals-list .meals .row,
+    .restaurant-client-page .page-content .meals-list .meals .row {
+        margin: 0;
+    }
+
+    .restaurant-seller-page .page-content .meals-list .meals .card,
+    .restaurant-client-page .page-content .meals-list .meals .card{
+        margin-bottom: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 425px){
+    /*------home page------*/
+    .nav-bar .navbar .right-part .search-field form input {
+        width: 220px;
+    }
+
+    .intro{
+        height: 70%;
+    }
+
+    .intro h1 {
+        font-size: 60px;
+    }
+
+    .add-new-offer-page .page-content .offer-form form .date .row .from{
+        margin-bottom: 20px;
+    }
+
+    /*------cart page------*/
+    .cart-page .page-content .items .item-card .item-info .text{
+        margin-top: 30px;
+    }
+
+    .cart-page .page-content .items .item-card .item-info .text >*:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+
+    /*------register page------*/
+    .register-client-page .page-content .register-form form .fields .btn,
+    .register-seller-page .page-content .register-form form .fields .btn,
+    .login-page .page-content .login-form form .fields .signin-btn{
+        padding: 20px 70px;
+    }
+
+    .login-page .page-content .login-form form .fields .creat-new a{
+        padding: 20px 40px;
+    }
+
+
+    /*------meal page------*/
+    .meal-page .page-content .meal-info .name h1 {
+        font-size: 30px;
+    }
+
+    .meal-page .page-content .meal-info .name p{
+        font-size: 16px;
+    }
+
+    .meal-page .page-content .meal-info .extra-info ul{
+        line-height: 2;
+    }
+
+    .meal-page .page-content .meal-info .extra-info ul li >*{
+        font-size: 20px !important;
+    }
+
+    .meal-page .page-content .meal-info .extra-info ul li i{
+        width: auto;
+    }
+
+    .order-button a{
+        font-size: 20px;
+        padding: 25px 100px;
+    }
+
+     .order-button a i{
+        font-size: 65px;
+    }
+
+    .meal-page .page-content .users-ratings .ratings .rating-card .row .customer-rating{
+        font-size: 20px;
+    }
+
+    .meal-page .page-content .users-ratings .ratings .rating-card .customer-opinion{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .jq-star{
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .subtitle h1{
+        font-size: 30px;
+    }
+
+    /*------my account page------*/
+    .contact-us-page .page-content .contact-form form .form-group input::placeholder,
+    .contact-us-page .page-content .contact-form form .form-group textarea::placeholder,
+    .my-account-page .page-content .account-form form .form-group input::placeholder,
+    .my-account-page .page-content .account-form form .form-group textarea::placeholder,
+    .my-account-page .page-content .account-form form .form-group input,
+    .my-account-page .page-content .account-form form .form-group textarea{
+        font-size: 16px
+    }
+
+    /*------offers page------*/
+    .offers-page .page-content .add-btn a{
+        font-size: 20px;
+        padding: 15px 40px;
+    }
+
+    .offers-page .page-content .offers-list .offer-card img{
+        height: inherit;
+        max-width: inherit;
+    }
+
+
+    /*------orders page------*/
+    .orders-page-client .page-content .navigation .nav-pills .nav-item .nav-link{
+        font-size: 20px;
+    }
+
+
+    /*------restaurant client page*/
+    .restaurant-seller-page .page-content .restaurant-banner .image, .restaurant-client-page .page-content .restaurant-banner .image{
+        width: 200px;
+        height: 200px;
+    }
+
+    .restaurant-seller-page .page-content .restaurant-banner .rate .stars, .restaurant-client-page .page-content .restaurant-banner .rate .stars{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 320px){
+    /*------home page------*/
+    .nav-bar .navbar .right-part .search-field form input {
+        width: 160px;
+    }
+
+    .nav-bar .navbar .icons{
+        margin-left: auto;
+    }
+
+    .find-restaurants .filter .city .form-group select,
+    .find-restaurants .filter .search input{
+        padding: 0 20px;
+    }
+
+
+    /*------orders page------*/
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .current-orders .current-card,
+    .orders-page-client .page-content .navigation .tab-content .tab-pane .previous-orders .previous-card{
+        padding: 20px 10px;
+    }
+
+
+    /*------orders page------*/
+    .orders-page-client .page-content .navigation .nav-pills .nav-item .nav-link {
+        font-size: 16px;
+    }
+}
+
+
